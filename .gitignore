@@ -1,0 +1,22 @@
+# build output
+bin/
+*.exe
+*.pdb
+
+# local notes (contain local paths and working notes)
+CLAUDE.md
+docs/design.md
+docs/design-v2.md
+docs/plan.md
+docs/plan-v2.md
+docs/progress.md
+docs/progress-v2.md
+docs/icon-preview.png
+.superpowers/
+
+# secrets / editor junk
+.env
+*.tmp
+.vs/
+.vscode/
+Thumbs.db
