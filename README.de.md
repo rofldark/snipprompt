@@ -11,7 +11,7 @@
 ![Abhängigkeiten](https://img.shields.io/badge/dependencies-none-brightgreen)
 ![Lizenz](https://img.shields.io/badge/license-MIT-blue)
 
-[English](README.md) · [Schnellstart](#-schnellstart) · [Funktionen](#-funktionen) · [Einstellungen](#%EF%B8%8F-einstellungen) · [Grenzen](#-bekannte-grenzen)
+[English](README.md) · [**Download**](https://github.com/rofldark/snipprompt/releases/latest) · [Schnellstart](#-schnellstart) · [Funktionen](#-funktionen) · [Einstellungen](#%EF%B8%8F-einstellungen) · [Grenzen](#-bekannte-grenzen)
 
 <img src="docs/img/demo.gif" width="860" alt="SnipPrompt-Demo: ausschneiden, markieren, Session wählen, Bild landet im Claude-Code-Prompt">
 
@@ -22,6 +22,16 @@
 Um Claude Code etwas zu zeigen, heißt es meist: Snipping Tool öffnen, aufnehmen, kopieren, ins Terminal wechseln, einfügen.
 SnipPrompt macht daraus **ein Tastenkürzel und einen Rahmen**. Es sitzt neben der Uhr, findet deine Claude-Code-Sessions
 im Windows Terminal und fügt den Screenshot in die gewählte ein – bereit für deine Frage.
+
+## ⬇️ Download
+
+**[SnipPrompt.exe aus dem neuesten Release laden](https://github.com/rofldark/snipprompt/releases/latest)** – eine einzelne Datei (~115 KB),
+kein Installer. Irgendwo ablegen (z. B. `C:\Tools\SnipPrompt\`) und doppelklicken.
+
+> [!IMPORTANT]
+> **Windows SmartScreen warnt beim ersten Start.** Die exe ist nicht signiert (ein Zertifikat kostet jedes Jahr Geld),
+> deshalb zeigt Windows *„Der Computer wurde durch Windows geschützt“*. Auf **Weitere Informationen** → **Trotzdem ausführen** klicken.
+> Das ist nur einmal nötig. Wer mag, prüft die SHA-256-Prüfsumme im Release oder [baut selbst](#-schnellstart) aus dem Quellcode.
 
 ## ✨ Funktionen
 
@@ -39,6 +49,8 @@ im Windows Terminal und fügt den Screenshot in die gewählte ein – bereit fü
 ## 🚀 Schnellstart
 
 Voraussetzungen: Windows 10/11, [Windows Terminal](https://aka.ms/terminal) und Claude Code darin.
+
+Entweder [die exe laden](#%EF%B8%8F-download) und starten oder selbst bauen:
 
 ```powershell
 git clone https://github.com/rofldark/snipprompt.git
@@ -86,7 +98,7 @@ Einstellungen: `%APPDATA%\SnipPrompt\settings.json`, Screenshot-Kopien: `%LOCALA
 - Claude-Code-Sessions werden am Statuszeichen vor dem Tab-Titel erkannt (`✳` im Leerlauf, Spinner beim Arbeiten).
   Ändert sich das Format, muss die Erkennung angepasst werden (`Logic.Markers`).
 - Liest Claude Code die Zwischenablage langsam, kann eine Vorlage vor dem Platzhalter `[Image #1]` landen.
-- Die exe ist nicht signiert; Windows SmartScreen fragt evtl. einmal nach.
+- Die exe ist nicht signiert; Windows SmartScreen fragt einmal nach (*Weitere Informationen* → *Trotzdem ausführen*), siehe [Download](#%EF%B8%8F-download).
 
 ## 🧪 Entwicklung
 

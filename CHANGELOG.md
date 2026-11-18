@@ -5,6 +5,9 @@ Versionierung nach [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Hinzugefügt
+- Fertige `SnipPrompt.exe` als GitHub-Release (v0.2.0), README mit Download-Abschnitt und SmartScreen-Hinweis.
+
 ## [0.2.0] - 2026-11-18
 ### Geändert
 - Projekt heißt jetzt **SnipPrompt** (vormals ClaudeDrop). Vorhandene Screenshots werden beim ersten Start übernommen;

@@ -11,7 +11,7 @@
 ![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-[Deutsch](README.de.md) · [Quick start](#-quick-start) · [Features](#-features) · [Settings](#%EF%B8%8F-settings) · [Known limits](#-known-limits)
+[Deutsch](README.de.md) · [**Download**](https://github.com/rofldark/snipprompt/releases/latest) · [Quick start](#-quick-start) · [Features](#-features) · [Settings](#%EF%B8%8F-settings) · [Known limits](#-known-limits)
 
 <img src="docs/img/demo.gif" width="860" alt="SnipPrompt demo: snip, mark, pick a session, the image lands in the Claude Code prompt">
 
@@ -22,6 +22,16 @@
 Showing Claude Code what you see usually means: open the Snipping Tool, capture, copy, switch to the terminal, paste.
 SnipPrompt turns that into **one shortcut and one drag**. It lives next to the clock, finds your Claude Code sessions
 in Windows Terminal and pastes the screenshot into the one you choose – ready for your question.
+
+## ⬇️ Download
+
+**[Download SnipPrompt.exe from the latest release](https://github.com/rofldark/snipprompt/releases/latest)** – a single ~115 KB file,
+no installer. Put it anywhere (e.g. `C:\Tools\SnipPrompt\`) and double-click it.
+
+> [!IMPORTANT]
+> **Windows SmartScreen will warn you on first start.** The exe is not code-signed (a certificate costs money every year),
+> so Windows shows *"Windows protected your PC"*. Click **More info** → **Run anyway**. You only have to do this once.
+> If you prefer, check the SHA-256 checksum listed in the release or [build it yourself](#-quick-start) from the source.
 
 ## ✨ Features
 
@@ -49,6 +59,8 @@ in Windows Terminal and pastes the screenshot into the one you choose – ready 
 ## 🚀 Quick start
 
 Requirements: Windows 10/11, [Windows Terminal](https://aka.ms/terminal) and Claude Code running inside it.
+
+Either [download the exe](#%EF%B8%8F-download) and start it, or build it yourself:
 
 ```powershell
 git clone https://github.com/rofldark/snipprompt.git
@@ -98,7 +110,7 @@ SnipPrompt sends keystrokes to another program, so it is strict about where they
 - Claude Code sessions are recognised by the status mark Claude Code puts in front of the tab title
   (`✳` when idle, a spinner while working). If that format changes, recognition needs an update (`Logic.Markers`).
 - If Claude Code reads the clipboard slowly, a template may end up in front of the `[Image #1]` placeholder.
-- The executable is not code-signed; Windows SmartScreen may ask once.
+- The executable is not code-signed; Windows SmartScreen asks once (*More info* → *Run anyway*), see [Download](#%EF%B8%8F-download).
 
 ## 🧪 Development
 
