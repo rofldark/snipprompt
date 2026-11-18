@@ -20,3 +20,6 @@ docs/icon-preview.png
 .vs/
 .vscode/
 Thumbs.db
+
+# promo clip source (local only)
+promo/
